@@ -4,3 +4,5 @@ dist/
 .DS_Store
 .idea
 cypress/videos/*
+cypress/screenshots/*
+cypress/downloads/*
