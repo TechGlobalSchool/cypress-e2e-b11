@@ -47,8 +47,43 @@ describe("Cypress Selectors", () => {
   it('Practice Web Elements using - Siblings, Parent and Child', () => {
     cy.contains('.card', 'HTML Elements').click()
 
-    cy.get('#radio-button-group').find('div')
 
-    cy.get('#radio-button-group div')
+    // next()         => Locates the immediate next sibling of a web element
+    cy.get('div').contains('Paragraphs').next()
+
+    // nextAll()      => Locates the ALL immediate next siblings of a web element
+    cy.get('div').contains('Paragraphs').nextAll()
+
+
+    // prev()         => Locates the immediate previous sibling of a web element
+    cy.get('#testing_paragraph').prev()
+
+    // prevAll()      => Locates the ALL immediate previous siblings of a web element
+    cy.get('#testing_paragraph').prevAll()
+
+    // Locates the immediate parent of a web element
+    cy.get('#testing_paragraph').parent()
+
+    // Locates one of the parents of a web element
+    cy.get('#testing_paragraph').parents('.HtmlElements_mainContainer__Fpn6M')
+    cy.get('#testing_paragraph').parents('.SubPageLayout_subpageContent__3aNg7')
+
+
+    // Locates untill the specific parent
+    cy.get('#testing_paragraph').parentsUntil('.SubPageLayout_wrapper__hs6Iw')
+
+    cy.get('[data-identifier="Paragraphs"]').children()
+
+    cy.get('#apple_check')
+    .parents('#checkbox-button-group')
+    .next()
+    .find('div')
+    .children()
+    .find('input')
+    .parent()
+    .parent()
+    .parent()
+    .prev()
   })
+  
 });
