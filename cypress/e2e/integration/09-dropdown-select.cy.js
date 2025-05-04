@@ -61,8 +61,7 @@ describe("Dropdown select", () => {
       color: 'Silver',
       delivery: 'Pick up'
     }
-  ].forEach((obj) => {
-    const [ product, color, delivery ] = obj;
+  ].forEach(({ product, color, delivery }) => {
     it(`Validate the result of selections for ${color} ${product}`, () => {
       /*
         Select "iPad Pro 11"
