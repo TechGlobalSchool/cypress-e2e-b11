@@ -17,3 +17,8 @@
 import './commands'
 import '@4tw/cypress-drag-drop'
 import 'cypress-real-events'
+
+
+beforeEach(() => {
+  cy.visit(`${Cypress.env('SITE_URL')}/frontend`)
+})
