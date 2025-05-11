@@ -44,8 +44,8 @@ describe("Debugging", () => {
     cy.debug()
 
     /**
-     * Sometimes the pause button on the Sources tab might not work as you expect
-     * so intead, you can use debugger command in JavaScript and trigger the pause anytime you want
+     * Sometimes, the pause button on the Sources tab may not work as expected.
+     * Instead, you can use the debugger command in JavaScript to trigger the pause whenever you need it.
      * 
      * @example
      * 
