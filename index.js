@@ -1,1 +1,1 @@
-console.log(process.env.TECHGLOBAL  + ' TECHGLOBAL ENV VARIABLE')
+console.log('TECHGLOBAL ENV VARIABLE')
