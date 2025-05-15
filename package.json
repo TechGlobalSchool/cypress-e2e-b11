@@ -7,9 +7,9 @@
     "test:open": "npx cypress open",
     "test:config": "npm t -- --browser chrome --config viewportHeight=720,viewportWidth=1080 --headed",
     "test:multiple": "npm t -- --env grepTags=\"@smoke|@table\",grepFilterSpecs=true",
-    "test:smoke": "npm t -- --env grepTags=@smoke,grepFilterSpecs=true"
+    "test:smoke": "npm t -- --env grepTags=@smoke,grepFilterSpecs=true --browser chrome"
   },
-  "keywords": [],
+  "keywords": [], 
   "author": "",
   "license": "ISC",
   "description": "",
